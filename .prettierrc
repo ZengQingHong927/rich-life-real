@@ -1,0 +1,10 @@
+{
+        "printWidth": 600,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "tabWidth": 8,
+        "plugins": [
+                "prettier-plugin-tailwindcss"
+        ],
+        "pluginSearchDirs": false
+}

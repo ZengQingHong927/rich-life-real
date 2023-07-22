@@ -1,3 +1,58 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "airbnb-typescript",
+      "react-app",
+      "prettier"
+      // "eslint:recommended",
+      // "plugin:react/recommended",
+      // "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "project": ["./tsconfig.json"]
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint"
+  ],
+  "rules": {
+      "react/jsx-key": 2,
+      "arrow-body-style": 1,
+      "import/no-duplicates": 0,
+      "react/self-closing-comp": 1,
+      "@typescript-eslint/no-shadow": 0,
+      "import/no-useless-path-segments": 0,
+      "import/no-extraneous-dependencies": 0,
+      "@typescript-eslint/naming-convention": 0,
+      "@typescript-eslint/lines-between-class-members": 0,
+      "@typescript-eslint/no-duplicate-imports": 0,
+      "object-curly-spacing": [
+          0,
+          "always"
+      ],
+      "@typescript-eslint/no-unused-vars": [
+          1,
+          {
+              "vars": "all",
+              "args": "none"
+          }
+      ],
+      "prefer-const": 0,
+      "prefer-destructuring": [
+          1,
+          {
+              "object": true,
+              "array": false
+          }
+      ]
+  }
 }
